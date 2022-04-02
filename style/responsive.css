@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px){
+    header .container {
+        padding: 8px 10px;
+      }
+    
+    header .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    header .logo .logo-img {
+        background: url("/img/netflix-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}

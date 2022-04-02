@@ -1,0 +1,147 @@
+:root {
+    --red: #e50914;
+    --black: #181818;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE */
+
+body {
+    background: var(--black);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+header .container {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 35px;
+}
+
+header .logo {
+    height: 40px;
+    width: 110px;
+}
+
+.logo .logo-img {
+    background: url("/img/netflix-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+header nav a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a i {
+    font-size: 12px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* FILME PRINCIPAL */
+
+main .filme-principal {
+    background: linear-gradient(90deg, var(--black) 20%, rgba(24,24,24,0) 70%, rgba(24,24,24,0) 60%), url('/img/background-vampiros.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    line-height: 1.4;
+
+    padding: 25px 5vw;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    height: 100%;
+    width: 100%;
+}
+
+.filme-principal .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 35%;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 16px 32px 64px 0;
+}
+
+.logo-container {
+    width: 90%;
+}
+
+.logo-vampiros {
+    width: 100%;
+    height: auto;
+}
+
+.filme-principal .detalhes-container {
+    margin: 40px 0 22px 0;
+}
+
+.detalhes-titulo .titulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.botao-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+.botao {
+    font-size: 12px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #fff;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.icone-botao {
+    margin: 0 7px 0 0;
+}
+
+.icone-botao i {
+    font-size: 16px;
+}
+
+.botao-info {
+    background-color: rgba(116, 116, 116, 0.600);
+    color: #fff;
+    margin: 0 0 0 10px;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+    padding: 0 0 0 5vw;
+}
